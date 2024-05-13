@@ -49,8 +49,8 @@ def analyze(malware, api_key):
 
         print(f"{Colors.BLUE}Signature Info:\n")
         for sig_keys, sig_items in file.signature_info.items():
-            if sig_keys == "file version":
-                continue
+            if type(sig_items) == str:
+                print(f"- {sig_keys}: {sig_items}")
             else:
                 print(f"- Certificate: {sig_keys}")
                 for cert_info in sig_items:

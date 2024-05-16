@@ -1,4 +1,5 @@
 import hashlib
+import json
 import subprocess
 import vt
 import argparse
@@ -65,6 +66,9 @@ def analyze(malware, api_key):
         process = subprocess.Popen([program] + args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         output, error = process.communicate()
         print(output)
+        output = output.replace('"', "'")
+        print(output)
+        print(json.loads(output))
 
 
 

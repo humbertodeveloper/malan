@@ -1,9 +1,9 @@
 {
   "meta":{
-    "timestamp":"2024-05-16T05:09:01.782799",
+    "timestamp":"2024-05-16T08:21:54.658582",
     "version":"7.0.1",
     "argv":[
-      "/home/sirius/Downloads/malware/7447858ba629883749bfa27f7a6deb01ece420e0f4168ff1eea533d275b2e9d3.exe",
+      "samples/infected.exe",
       "-r",
       "capa_rules",
       "-s",
@@ -12,186 +12,77 @@
       "-q"
     ],
     "sample":{
-      "md5":"a8af730b7f8a3d4ac88b733f7f0e9696",
-      "sha1":"f32d56c4d5af090c3946f5fe4b7ad043fc0c4853",
-      "sha256":"7447858ba629883749bfa27f7a6deb01ece420e0f4168ff1eea533d275b2e9d3",
-      "path":"/home/sirius/Downloads/malware/7447858ba629883749bfa27f7a6deb01ece420e0f4168ff1eea533d275b2e9d3.exe"
+      "md5":"8eb6ed01392a5cbba283febd7c9aa16a",
+      "sha1":"d472f8b50f8a9a6e583262f326a57927d9df940c",
+      "sha256":"b2e85f5907f28c7c9bfc0370be2567494e0fd11887dfc80ca62958d4f5fbf8a0",
+      "path":"/home/peacekeeper/projetos/malan/samples/infected.exe"
     },
     "flavor":"static",
     "analysis":{
       "format":"pe",
-      "arch":"i386",
-      "os":"windows",
-      "extractor":"VivisectFeatureExtractor",
+      "arch":"amd64",
+      "os":"any",
+      "extractor":"DnfileFeatureExtractor",
       "rules":[
-        "/home/sirius/PycharmProjects/malan/capa_rules"
+        "/home/peacekeeper/projetos/malan/capa_rules"
       ],
       "base_address":{
-        "type":"absolute",
-        "value":4194304
+        "type":"no address"
       },
       "layout":{
         "functions":[
           {
             "address":{
-              "type":"absolute",
-              "value":4215267
+              "type":"dn token",
+              "value":100663297
             },
             "matched_basic_blocks":[
               {
                 "address":{
-                  "type":"absolute",
-                  "value":4215267
+                  "type":"dn token",
+                  "value":100663297
                 }
               }
             ]
           },
           {
             "address":{
-              "type":"absolute",
-              "value":11224360
+              "type":"dn token",
+              "value":100663306
             },
             "matched_basic_blocks":[
               {
                 "address":{
-                  "type":"absolute",
-                  "value":11224378
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224389
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224400
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224411
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224428
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224437
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224448
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224459
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224482
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224497
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224506
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224533
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224542
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224582
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224591
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224637
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224663
+                  "type":"dn token",
+                  "value":100663306
                 }
               }
             ]
           },
           {
             "address":{
-              "type":"absolute",
-              "value":11224696
+              "type":"dn token",
+              "value":100663309
             },
             "matched_basic_blocks":[
               {
                 "address":{
-                  "type":"absolute",
-                  "value":11224696
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224731
-                }
-              },
-              {
-                "address":{
-                  "type":"absolute",
-                  "value":11224752
+                  "type":"dn token",
+                  "value":100663309
                 }
               }
             ]
           },
           {
             "address":{
-              "type":"absolute",
-              "value":11616097
+              "type":"dn token",
+              "value":100663312
             },
             "matched_basic_blocks":[
               {
                 "address":{
-                  "type":"absolute",
-                  "value":11616097
+                  "type":"dn token",
+                  "value":100663312
                 }
               }
             ]
@@ -199,49 +90,182 @@
         ]
       },
       "feature_counts":{
-        "file":28844,
+        "file":8391,
         "functions":[
           {
             "address":{
-              "type":"absolute",
-              "value":4215267
+              "type":"dn token",
+              "value":100663297
             },
-            "count":71
+            "count":47
           },
           {
             "address":{
-              "type":"absolute",
-              "value":11224360
+              "type":"dn token",
+              "value":100663298
             },
-            "count":61
+            "count":4
           },
           {
             "address":{
-              "type":"absolute",
-              "value":11224696
+              "type":"dn token",
+              "value":100663299
             },
-            "count":34
+            "count":4
           },
           {
             "address":{
-              "type":"absolute",
-              "value":11616097
+              "type":"dn token",
+              "value":100663300
             },
-            "count":19
+            "count":4
           },
           {
             "address":{
-              "type":"absolute",
-              "value":12001486
+              "type":"dn token",
+              "value":100663301
             },
-            "count":18
+            "count":16
           },
           {
             "address":{
-              "type":"absolute",
-              "value":12047172
+              "type":"dn token",
+              "value":100663302
             },
-            "count":25
+            "count":5
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663303
+            },
+            "count":13
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663304
+            },
+            "count":11
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663305
+            },
+            "count":16
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663306
+            },
+            "count":139
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663307
+            },
+            "count":14
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663308
+            },
+            "count":16
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663309
+            },
+            "count":146
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663310
+            },
+            "count":14
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663311
+            },
+            "count":14
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663312
+            },
+            "count":10
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663313
+            },
+            "count":8
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663314
+            },
+            "count":22
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663315
+            },
+            "count":16
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663316
+            },
+            "count":65
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663317
+            },
+            "count":8
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663318
+            },
+            "count":20
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663319
+            },
+            "count":8
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663320
+            },
+            "count":8
+          },
+          {
+            "address":{
+              "type":"dn token",
+              "value":100663321
+            },
+            "count":15
           }
         ]
       },
@@ -249,95 +273,43 @@
     }
   },
   "rules":{
-    "contain loop":{
+    "load .NET assembly":{
       "meta":{
-        "name":"contain loop",
+        "name":"load .NET assembly",
+        "namespace":"load-code/dotnet",
         "authors":[
-          "moritz.raabe@mandiant.com"
+          "anushka.virgaonkar@mandiant.com"
         ],
         "scopes":{
-          "static":"function"
+          "static":"function",
+          "dynamic":"call"
         },
-        "attack":[ ],
+        "attack":[
+          {
+            "parts":[
+              "Defense Evasion",
+              "Reflective Code Loading"
+            ],
+            "tactic":"Defense Evasion",
+            "technique":"Reflective Code Loading",
+            "subtechnique":"",
+            "id":"T1620"
+          }
+        ],
         "mbc":[ ],
         "references":[ ],
-        "examples":[
-          "08AC667C65D36D6542917655571E61C8:0x406EAA"
-        ],
+        "examples":[ ],
         "description":"",
-        "lib":true,
+        "lib":false,
         "is_subscope_rule":false,
         "maec":{ }
       },
-      "source":"rule:\n  meta:\n    name: contain loop\n    authors:\n      - moritz.raabe@mandiant.com\n    lib: true\n    scopes:\n      static: function\n      dynamic: unsupported  # requires characteristic features\n    examples:\n      - 08AC667C65D36D6542917655571E61C8:0x406EAA\n  features:\n    - or:\n      - characteristic: loop\n      - characteristic: tight loop\n      - characteristic: recursive call\n",
+      "source":"rule:\n  meta:\n    name: load .NET assembly\n    namespace: load-code/dotnet\n    authors:\n      - anushka.virgaonkar@mandiant.com\n    scopes:\n      static: function\n      dynamic: call\n    att&ck:\n      - Defense Evasion::Reflective Code Loading [T1620]\n  features:\n    - or:\n      - api: System.Reflection.Assembly::Load\n      - api: System.AppDomain::Load\n      - api: System.Reflection.Assembly::LoadFile\n      - api: System.Reflection.Assembly::LoadFrom\n      - api: System.Reflection.Assembly::LoadWithPartialName\n      - api: System.Reflection.Assembly::ReflectionOnlyLoad\n      - api: System.Reflection.Assembly::ReflectionOnlyLoadFrom\n      - api: System.Reflection.Assembly::UnsafeLoadFrom\n",
       "matches":[
         [
           {
-            "type":"absolute",
-            "value":4215267
-          },
-          {
-            "success":true,
-            "node":{
-              "type":"statement",
-              "statement":{
-                "type":"or"
-              }
-            },
-            "children":[
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"characteristic",
-                    "characteristic":"loop"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
-              },
-              {
-                "success":true,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"characteristic",
-                    "characteristic":"tight loop"
-                  }
-                },
-                "children":[ ],
-                "locations":[
-                  {
-                    "type":"absolute",
-                    "value":4215301
-                  }
-                ],
-                "captures":{ }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"characteristic",
-                    "characteristic":"recursive call"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
-              }
-            ],
-            "locations":[ ],
-            "captures":{ }
-          }
-        ],
-        [
-          {
-            "type":"absolute",
-            "value":11224360
+            "type":"dn token",
+            "value":100663297
           },
           {
             "success":true,
@@ -353,15 +325,18 @@
                 "node":{
                   "type":"feature",
                   "feature":{
-                    "type":"characteristic",
-                    "characteristic":"loop"
+                    "type":"api",
+                    "api":"System.Reflection.Assembly::Load"
                   }
                 },
                 "children":[ ],
                 "locations":[
                   {
-                    "type":"absolute",
-                    "value":11224360
+                    "type":"dn token offset",
+                    "value":[
+                      100663297,
+                      75
+                    ]
                   }
                 ],
                 "captures":{ }
@@ -371,8 +346,8 @@
                 "node":{
                   "type":"feature",
                   "feature":{
-                    "type":"characteristic",
-                    "characteristic":"tight loop"
+                    "type":"api",
+                    "api":"System.AppDomain::Load"
                   }
                 },
                 "children":[ ],
@@ -384,8 +359,73 @@
                 "node":{
                   "type":"feature",
                   "feature":{
-                    "type":"characteristic",
-                    "characteristic":"recursive call"
+                    "type":"api",
+                    "api":"System.Reflection.Assembly::LoadFile"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Reflection.Assembly::LoadFrom"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Reflection.Assembly::LoadWithPartialName"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Reflection.Assembly::ReflectionOnlyLoad"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Reflection.Assembly::ReflectionOnlyLoadFrom"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Reflection.Assembly::UnsafeLoadFrom"
                   }
                 },
                 "children":[ ],
@@ -399,74 +439,194 @@
         ]
       ]
     },
-    "decompress data using aPLib":{
+    "terminate process":{
       "meta":{
-        "name":"decompress data using aPLib",
-        "namespace":"data-manipulation/compression",
+        "name":"terminate process",
+        "namespace":"host-interaction/process/terminate",
         "authors":[
-          "@r3c0nst (Frank Boldewin)",
           "moritz.raabe@mandiant.com",
-          "cdong49@gatech.edu"
+          "michael.hunhoff@mandiant.com",
+          "anushka.virgaonkar@mandiant.com"
         ],
         "scopes":{
-          "static":"function"
+          "static":"function",
+          "dynamic":"thread"
         },
         "attack":[ ],
         "mbc":[
           {
             "parts":[
-              "Data",
-              "Decompress Data",
-              "aPLib"
+              "Process",
+              "Terminate Process"
             ],
-            "objective":"Data",
-            "behavior":"Decompress Data",
-            "method":"aPLib",
-            "id":"C0025.003"
+            "objective":"Process",
+            "behavior":"Terminate Process",
+            "method":"",
+            "id":"C0018"
           }
         ],
-        "references":[
-          "https://ibsensoftware.com/files/aPLib-1.1.1.zip"
-        ],
+        "references":[ ],
         "examples":[
-          "DAA13AE302FE8B618DDBF590537443EF:0x419F50",
-          "B43FCA5283BFC7022553EFF663683834:0x424",
-          "757139E76FAE876AE50DD2C3AC11D5D8:0x413074"
+          "C91887D861D9BD4A5872249B641BC9F9:0x401A77",
+          "9B7CCAA2AE6A5B96E3110EBCBC4311F6:0x10010307"
         ],
-        "description":"detects decompression function of library aPLib",
+        "description":"",
         "lib":false,
         "is_subscope_rule":false,
         "maec":{ }
       },
-      "source":"rule:\n  meta:\n    name: decompress data using aPLib\n    namespace: data-manipulation/compression\n    authors:\n      - \"@r3c0nst (Frank Boldewin)\"\n      - moritz.raabe@mandiant.com\n      - cdong49@gatech.edu\n    description: detects decompression function of library aPLib\n    scopes:\n      static: function\n      dynamic: unsupported  # requires characteristic, mnemonic features\n    mbc:\n      - Data::Decompress Data::aPLib [C0025.003]\n    references:\n      - https://ibsensoftware.com/files/aPLib-1.1.1.zip\n    examples:\n      - DAA13AE302FE8B618DDBF590537443EF:0x419F50\n      - B43FCA5283BFC7022553EFF663683834:0x424\n      - 757139E76FAE876AE50DD2C3AC11D5D8:0x413074\n  features:\n    - and:\n      - description: aP_depack\n      - match: contain loop\n      - instruction:\n        - description: line 138, if (offs >= 32000)\n        - mnemonic: cmp\n        - number: 32000\n      - instruction:\n        - description: line 144, if (offs < 128)\n        - mnemonic: cmp\n        - or:\n          - number: 127\n          - number: 128\n      - instruction:\n        - description: line 133, offs <<= 8;\n        - mnemonic: shl\n        - number: 8\n      - instruction:\n        - description: line 96, offs >>= 1;\n        - mnemonic: shr\n        - number: 1\n      - optional:\n        - count(characteristic(calls from)): 2 or more\n          description: calls aP_getbit and aP_getgamma\n",
+      "source":"rule:\n  meta:\n    name: terminate process\n    namespace: host-interaction/process/terminate\n    authors:\n      - moritz.raabe@mandiant.com\n      - michael.hunhoff@mandiant.com\n      - anushka.virgaonkar@mandiant.com\n    scopes:\n      static: function\n      dynamic: thread\n    mbc:\n      - Process::Terminate Process [C0018]\n    examples:\n      - C91887D861D9BD4A5872249B641BC9F9:0x401A77\n      - 9B7CCAA2AE6A5B96E3110EBCBC4311F6:0x10010307\n  features:\n    - or:\n      - api: System.Diagnostics.Process::Kill\n      - api: System.Diagnostics.Process::WaitForExit\n      - api: System.Diagnostics.Process::WaitForExitAsync\n      - api: System.Environment::Exit\n      - api: System.Windows.Forms.Application::Exit\n      - api: exit\n      - api: Exit\n      - and:\n        - optional:\n          - match: open process\n        - or:\n          - api: kernel32.TerminateProcess\n          - api: ntdll.NtTerminateProcess\n          - api: kernel32.ExitProcess\n",
       "matches":[
         [
           {
-            "type":"absolute",
-            "value":11224360
+            "type":"dn token",
+            "value":100663297
           },
           {
             "success":true,
             "node":{
               "type":"statement",
               "statement":{
-                "type":"and",
-                "description":"aP_depack"
+                "type":"or"
               }
             },
             "children":[
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Diagnostics.Process::Kill"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Diagnostics.Process::WaitForExit"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Diagnostics.Process::WaitForExitAsync"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
               {
                 "success":true,
                 "node":{
                   "type":"feature",
                   "feature":{
-                    "type":"match",
-                    "match":"contain loop"
+                    "type":"api",
+                    "api":"System.Environment::Exit"
+                  }
+                },
+                "children":[ ],
+                "locations":[
+                  {
+                    "type":"dn token offset",
+                    "value":[
+                      100663297,
+                      180
+                    ]
+                  }
+                ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"System.Windows.Forms.Application::Exit"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"exit"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"feature",
+                  "feature":{
+                    "type":"api",
+                    "api":"Exit"
+                  }
+                },
+                "children":[ ],
+                "locations":[ ],
+                "captures":{ }
+              },
+              {
+                "success":false,
+                "node":{
+                  "type":"statement",
+                  "statement":{
+                    "type":"and"
                   }
                 },
                 "children":[
                   {
                     "success":true,
+                    "node":{
+                      "type":"statement",
+                      "statement":{
+                        "type":"optional"
+                      }
+                    },
+                    "children":[
+                      {
+                        "success":false,
+                        "node":{
+                          "type":"feature",
+                          "feature":{
+                            "type":"match",
+                            "match":"open process"
+                          }
+                        },
+                        "children":[ ],
+                        "locations":[ ],
+                        "captures":{ }
+                      }
+                    ],
+                    "locations":[ ],
+                    "captures":{ }
+                  },
+                  {
+                    "success":false,
                     "node":{
                       "type":"statement",
                       "statement":{
@@ -475,30 +635,12 @@
                     },
                     "children":[
                       {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"characteristic",
-                            "characteristic":"loop"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":11224360
-                          }
-                        ],
-                        "captures":{ }
-                      },
-                      {
                         "success":false,
                         "node":{
                           "type":"feature",
                           "feature":{
-                            "type":"characteristic",
-                            "characteristic":"tight loop"
+                            "type":"api",
+                            "api":"TerminateProcess"
                           }
                         },
                         "children":[ ],
@@ -510,8 +652,21 @@
                         "node":{
                           "type":"feature",
                           "feature":{
-                            "type":"characteristic",
-                            "characteristic":"recursive call"
+                            "type":"api",
+                            "api":"NtTerminateProcess"
+                          }
+                        },
+                        "children":[ ],
+                        "locations":[ ],
+                        "captures":{ }
+                      },
+                      {
+                        "success":false,
+                        "node":{
+                          "type":"feature",
+                          "feature":{
+                            "type":"api",
+                            "api":"ExitProcess"
                           }
                         },
                         "children":[ ],
@@ -519,340 +674,6 @@
                         "captures":{ }
                       }
                     ],
-                    "locations":[ ],
-                    "captures":{ }
-                  }
-                ],
-                "locations":[
-                  {
-                    "type":"absolute",
-                    "value":11224360
-                  }
-                ],
-                "captures":{ }
-              },
-              {
-                "success":true,
-                "node":{
-                  "type":"statement",
-                  "statement":{
-                    "type":"subscope",
-                    "scope":"instruction"
-                  }
-                },
-                "children":[
-                  {
-                    "success":true,
-                    "node":{
-                      "type":"statement",
-                      "statement":{
-                        "type":"and"
-                      }
-                    },
-                    "children":[
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"mnemonic",
-                            "mnemonic":"cmp"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":11224604
-                          }
-                        ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"number",
-                            "number":32000
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":11224604
-                          }
-                        ],
-                        "captures":{ }
-                      }
-                    ],
-                    "locations":[ ],
-                    "captures":{ }
-                  }
-                ],
-                "locations":[
-                  {
-                    "type":"absolute",
-                    "value":11224604
-                  }
-                ],
-                "captures":{ }
-              },
-              {
-                "success":true,
-                "node":{
-                  "type":"statement",
-                  "statement":{
-                    "type":"subscope",
-                    "scope":"instruction"
-                  }
-                },
-                "children":[
-                  {
-                    "success":true,
-                    "node":{
-                      "type":"statement",
-                      "statement":{
-                        "type":"and"
-                      }
-                    },
-                    "children":[
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"mnemonic",
-                            "mnemonic":"cmp"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":11224632
-                          }
-                        ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"statement",
-                          "statement":{
-                            "type":"or"
-                          }
-                        },
-                        "children":[
-                          {
-                            "success":true,
-                            "node":{
-                              "type":"feature",
-                              "feature":{
-                                "type":"number",
-                                "number":127
-                              }
-                            },
-                            "children":[ ],
-                            "locations":[
-                              {
-                                "type":"absolute",
-                                "value":11224632
-                              }
-                            ],
-                            "captures":{ }
-                          },
-                          {
-                            "success":false,
-                            "node":{
-                              "type":"feature",
-                              "feature":{
-                                "type":"number",
-                                "number":128
-                              }
-                            },
-                            "children":[ ],
-                            "locations":[ ],
-                            "captures":{ }
-                          }
-                        ],
-                        "locations":[ ],
-                        "captures":{ }
-                      }
-                    ],
-                    "locations":[ ],
-                    "captures":{ }
-                  }
-                ],
-                "locations":[
-                  {
-                    "type":"absolute",
-                    "value":11224632
-                  }
-                ],
-                "captures":{ }
-              },
-              {
-                "success":true,
-                "node":{
-                  "type":"statement",
-                  "statement":{
-                    "type":"subscope",
-                    "scope":"instruction"
-                  }
-                },
-                "children":[
-                  {
-                    "success":true,
-                    "node":{
-                      "type":"statement",
-                      "statement":{
-                        "type":"and"
-                      }
-                    },
-                    "children":[
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"mnemonic",
-                            "mnemonic":"shl"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":11224569
-                          }
-                        ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"number",
-                            "number":8
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":11224569
-                          }
-                        ],
-                        "captures":{ }
-                      }
-                    ],
-                    "locations":[ ],
-                    "captures":{ }
-                  }
-                ],
-                "locations":[
-                  {
-                    "type":"absolute",
-                    "value":11224569
-                  }
-                ],
-                "captures":{ }
-              },
-              {
-                "success":true,
-                "node":{
-                  "type":"statement",
-                  "statement":{
-                    "type":"subscope",
-                    "scope":"instruction"
-                  }
-                },
-                "children":[
-                  {
-                    "success":true,
-                    "node":{
-                      "type":"statement",
-                      "statement":{
-                        "type":"and"
-                      }
-                    },
-                    "children":[
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"mnemonic",
-                            "mnemonic":"shr"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":11224658
-                          }
-                        ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"number",
-                            "number":1
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":11224658
-                          }
-                        ],
-                        "captures":{ }
-                      }
-                    ],
-                    "locations":[ ],
-                    "captures":{ }
-                  }
-                ],
-                "locations":[
-                  {
-                    "type":"absolute",
-                    "value":11224658
-                  }
-                ],
-                "captures":{ }
-              },
-              {
-                "success":true,
-                "node":{
-                  "type":"statement",
-                  "statement":{
-                    "type":"optional"
-                  }
-                },
-                "children":[
-                  {
-                    "success":false,
-                    "node":{
-                      "type":"statement",
-                      "statement":{
-                        "type":"range",
-                        "min":2,
-                        "max":9223372036854775808,
-                        "child":{
-                          "type":"characteristic",
-                          "characteristic":"calls from"
-                        }
-                      }
-                    },
-                    "children":[ ],
                     "locations":[ ],
                     "captures":{ }
                   }
@@ -867,137 +688,59 @@
         ]
       ]
     },
-    "packed with Themida":{
+    "access .NET resource":{
       "meta":{
-        "name":"packed with Themida",
-        "namespace":"anti-analysis/packer/themida",
+        "name":"access .NET resource",
+        "namespace":"executable/resource",
         "authors":[
-          "william.ballenthin@mandiant.com"
+          "@mr-tz"
         ],
         "scopes":{
-          "static":"file",
-          "dynamic":"file"
+          "static":"function",
+          "dynamic":"thread"
         },
-        "attack":[
-          {
-            "parts":[
-              "Defense Evasion",
-              "Obfuscated Files or Information",
-              "Software Packing"
-            ],
-            "tactic":"Defense Evasion",
-            "technique":"Obfuscated Files or Information",
-            "subtechnique":"Software Packing",
-            "id":"T1027.002"
-          }
-        ],
-        "mbc":[
-          {
-            "parts":[
-              "Anti-Static Analysis",
-              "Software Packing",
-              "Themida"
-            ],
-            "objective":"Anti-Static Analysis",
-            "behavior":"Software Packing",
-            "method":"Themida",
-            "id":"F0001.011"
-          }
-        ],
-        "references":[
-          "https://www.hexacorn.com/blog/2016/12/15/pe-section-names-re-visited/"
-        ],
+        "attack":[ ],
+        "mbc":[ ],
+        "references":[ ],
         "examples":[
-          "8a132663bee5c2f0f5cbfebee1b55ac72934632bf32bc32d6e2dae797c9e6e35"
+          "387f15043f0198fd3a637b0758c2b6dde9ead795c3ed70803426fc355731b173:0x06000084"
         ],
         "description":"",
         "lib":false,
         "is_subscope_rule":false,
         "maec":{ }
       },
-      "source":"rule:\n  meta:\n    name: packed with Themida\n    namespace: anti-analysis/packer/themida\n    authors:\n      - william.ballenthin@mandiant.com\n    scopes:\n      static: file\n      dynamic: file\n    att&ck:\n      - Defense Evasion::Obfuscated Files or Information::Software Packing [T1027.002]\n    mbc:\n      - Anti-Static Analysis::Software Packing::Themida [F0001.011]\n    references:\n      - https://www.hexacorn.com/blog/2016/12/15/pe-section-names-re-visited/\n    examples:\n      - 8a132663bee5c2f0f5cbfebee1b55ac72934632bf32bc32d6e2dae797c9e6e35\n      # see capa #1104 - 2826b762b9c268601a44974ef469a671b441e798a6c3cbb40070450c6c030ba2\n  features:\n    - or:\n      - section: Themida\n      - section: .Themida\n      - section: .themida\n      - section: WinLicen\n      - section: .winlice\n      - count(section(        )): 2 or more\n        description: Section names containing 8 space characters observed in Themida 3.0.x packed files\n      - and:\n        - description: Section names containing 3 and 8 space characters observed in Themida 2.1.x packed files\n        - section: \"   \"\n        - section: \"        \"\n",
+      "source":"rule:\n  meta:\n    name: access .NET resource\n    namespace: executable/resource\n    authors:\n      - \"@mr-tz\"\n    scopes:\n      static: function\n      dynamic: thread\n    examples:\n      - 387f15043f0198fd3a637b0758c2b6dde9ead795c3ed70803426fc355731b173:0x06000084\n  features:\n    - and:\n      - format: dotnet\n      - or:\n        - api: System.Resources.ResourceManager::ctor\n        - api: System.Reflection.Assembly::GetManifestResourceStream\n",
       "matches":[
         [
           {
-            "type":"no address"
+            "type":"dn token",
+            "value":100663318
           },
           {
             "success":true,
             "node":{
               "type":"statement",
               "statement":{
-                "type":"or"
+                "type":"and"
               }
             },
             "children":[
               {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"section",
-                    "section":"Themida"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"section",
-                    "section":".Themida"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
-              },
-              {
                 "success":true,
                 "node":{
                   "type":"feature",
                   "feature":{
-                    "type":"section",
-                    "section":".themida"
+                    "type":"format",
+                    "format":"dotnet"
                   }
                 },
                 "children":[ ],
                 "locations":[
                   {
-                    "type":"absolute",
-                    "value":7536640
+                    "type":"no address"
                   }
                 ],
-                "captures":{ }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"section",
-                    "section":"WinLicen"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"section",
-                    "section":".winlice"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
                 "captures":{ }
               },
               {
@@ -1005,79 +748,42 @@
                 "node":{
                   "type":"statement",
                   "statement":{
-                    "type":"range",
-                    "min":2,
-                    "max":9223372036854775808,
-                    "child":{
-                      "type":"section",
-                      "section":"        "
-                    }
-                  }
-                },
-                "children":[ ],
-                "locations":[
-                  {
-                    "type":"absolute",
-                    "value":4202496
-                  },
-                  {
-                    "type":"absolute",
-                    "value":7208960
-                  },
-                  {
-                    "type":"absolute",
-                    "value":7512064
-                  }
-                ],
-                "captures":{ }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"statement",
-                  "statement":{
-                    "type":"and",
-                    "description":"Section names containing 3 and 8 space characters observed in Themida 2.1.x packed files"
+                    "type":"or"
                   }
                 },
                 "children":[
-                  {
-                    "success":false,
-                    "node":{
-                      "type":"feature",
-                      "feature":{
-                        "type":"section",
-                        "section":"   "
-                      }
-                    },
-                    "children":[ ],
-                    "locations":[ ],
-                    "captures":{ }
-                  },
                   {
                     "success":true,
                     "node":{
                       "type":"feature",
                       "feature":{
-                        "type":"section",
-                        "section":"        "
+                        "type":"api",
+                        "api":"System.Resources.ResourceManager::ctor"
                       }
                     },
                     "children":[ ],
                     "locations":[
                       {
-                        "type":"absolute",
-                        "value":4202496
-                      },
-                      {
-                        "type":"absolute",
-                        "value":7208960
-                      },
-                      {
-                        "type":"absolute",
-                        "value":7512064
+                        "type":"dn token offset",
+                        "value":[
+                          100663318,
+                          34
+                        ]
                       }
                     ],
+                    "captures":{ }
+                  },
+                  {
+                    "success":false,
+                    "node":{
+                      "type":"feature",
+                      "feature":{
+                        "type":"api",
+                        "api":"System.Reflection.Assembly::GetManifestResourceStream"
+                      }
+                    },
+                    "children":[ ],
+                    "locations":[ ],
                     "captures":{ }
                   }
                 ],
@@ -1129,7 +835,7 @@
             },
             "children":[
               {
-                "success":false,
+                "success":true,
                 "node":{
                   "type":"feature",
                   "feature":{
@@ -1138,11 +844,15 @@
                   }
                 },
                 "children":[ ],
-                "locations":[ ],
+                "locations":[
+                  {
+                    "type":"no address"
+                  }
+                ],
                 "captures":{ }
               },
               {
-                "success":true,
+                "success":false,
                 "node":{
                   "type":"feature",
                   "feature":{
@@ -1151,12 +861,7 @@
                   }
                 },
                 "children":[ ],
-                "locations":[
-                  {
-                    "type":"absolute",
-                    "value":7520384
-                  }
-                ],
+                "locations":[ ],
                 "captures":{ }
               },
               {
@@ -1205,12 +910,12 @@
         ]
       ]
     },
-    "(internal) packer file limitation":{
+    "contains PDB path":{
       "meta":{
-        "name":"(internal) packer file limitation",
-        "namespace":"internal/limitation/file",
+        "name":"contains PDB path",
+        "namespace":"executable/pe/pdb",
         "authors":[
-          "william.ballenthin@mandiant.com"
+          "moritz.raabe@mandiant.com"
         ],
         "scopes":{
           "static":"file",
@@ -1220,268 +925,14 @@
         "mbc":[ ],
         "references":[ ],
         "examples":[
-          "CD2CBA9E6313E8DF2C1273593E649682"
-        ],
-        "description":"This sample appears to be packed.\n\nPacked samples have often been obfuscated to hide their logic.\ncapa cannot handle obfuscation well using static analysis. This means the results may be misleading or incomplete.\nIf possible, you should try to unpack this input file before analyzing it with capa.\nAlternatively, run the sample in a supported sandbox and invoke capa against the report to obtain dynamic analysis results.\n",
-        "lib":false,
-        "is_subscope_rule":false,
-        "maec":{ }
-      },
-      "source":"rule:\n  meta:\n    name: (internal) packer file limitation\n    namespace: internal/limitation/file\n    authors:\n      - william.ballenthin@mandiant.com\n    description: |\n      This sample appears to be packed.\n\n      Packed samples have often been obfuscated to hide their logic.\n      capa cannot handle obfuscation well using static analysis. This means the results may be misleading or incomplete.\n      If possible, you should try to unpack this input file before analyzing it with capa.\n      Alternatively, run the sample in a supported sandbox and invoke capa against the report to obtain dynamic analysis results.\n    scopes:\n      static: file\n      dynamic: file\n    examples:\n      - CD2CBA9E6313E8DF2C1273593E649682\n  features:\n    - or:\n      - match: anti-analysis/packer\n",
-      "matches":[
-        [
-          {
-            "type":"no address"
-          },
-          {
-            "success":true,
-            "node":{
-              "type":"statement",
-              "statement":{
-                "type":"or"
-              }
-            },
-            "children":[
-              {
-                "success":true,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"match",
-                    "match":"anti-analysis/packer"
-                  }
-                },
-                "children":[
-                  {
-                    "success":true,
-                    "node":{
-                      "type":"statement",
-                      "statement":{
-                        "type":"or"
-                      }
-                    },
-                    "children":[
-                      {
-                        "success":false,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"section",
-                            "section":"Themida"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[ ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":false,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"section",
-                            "section":".Themida"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[ ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"section",
-                            "section":".themida"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":7536640
-                          }
-                        ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":false,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"section",
-                            "section":"WinLicen"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[ ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":false,
-                        "node":{
-                          "type":"feature",
-                          "feature":{
-                            "type":"section",
-                            "section":".winlice"
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[ ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":true,
-                        "node":{
-                          "type":"statement",
-                          "statement":{
-                            "type":"range",
-                            "min":2,
-                            "max":9223372036854775808,
-                            "child":{
-                              "type":"section",
-                              "section":"        "
-                            }
-                          }
-                        },
-                        "children":[ ],
-                        "locations":[
-                          {
-                            "type":"absolute",
-                            "value":4202496
-                          },
-                          {
-                            "type":"absolute",
-                            "value":7208960
-                          },
-                          {
-                            "type":"absolute",
-                            "value":7512064
-                          }
-                        ],
-                        "captures":{ }
-                      },
-                      {
-                        "success":false,
-                        "node":{
-                          "type":"statement",
-                          "statement":{
-                            "type":"and",
-                            "description":"Section names containing 3 and 8 space characters observed in Themida 2.1.x packed files"
-                          }
-                        },
-                        "children":[
-                          {
-                            "success":false,
-                            "node":{
-                              "type":"feature",
-                              "feature":{
-                                "type":"section",
-                                "section":"   "
-                              }
-                            },
-                            "children":[ ],
-                            "locations":[ ],
-                            "captures":{ }
-                          },
-                          {
-                            "success":true,
-                            "node":{
-                              "type":"feature",
-                              "feature":{
-                                "type":"section",
-                                "section":"        "
-                              }
-                            },
-                            "children":[ ],
-                            "locations":[
-                              {
-                                "type":"absolute",
-                                "value":4202496
-                              },
-                              {
-                                "type":"absolute",
-                                "value":7208960
-                              },
-                              {
-                                "type":"absolute",
-                                "value":7512064
-                              }
-                            ],
-                            "captures":{ }
-                          }
-                        ],
-                        "locations":[ ],
-                        "captures":{ }
-                      }
-                    ],
-                    "locations":[ ],
-                    "captures":{ }
-                  }
-                ],
-                "locations":[
-                  {
-                    "type":"no address"
-                  }
-                ],
-                "captures":{ }
-              }
-            ],
-            "locations":[ ],
-            "captures":{ }
-          }
-        ]
-      ]
-    },
-    "reference anti-VM strings targeting Xen":{
-      "meta":{
-        "name":"reference anti-VM strings targeting Xen",
-        "namespace":"anti-analysis/anti-vm/vm-detection",
-        "authors":[
-          "michael.hunhoff@mandiant.com"
-        ],
-        "scopes":{
-          "static":"file",
-          "dynamic":"file"
-        },
-        "attack":[
-          {
-            "parts":[
-              "Defense Evasion",
-              "Virtualization/Sandbox Evasion",
-              "System Checks"
-            ],
-            "tactic":"Defense Evasion",
-            "technique":"Virtualization/Sandbox Evasion",
-            "subtechnique":"System Checks",
-            "id":"T1497.001"
-          }
-        ],
-        "mbc":[
-          {
-            "parts":[
-              "Anti-Behavioral Analysis",
-              "Virtual Machine Detection"
-            ],
-            "objective":"Anti-Behavioral Analysis",
-            "behavior":"Virtual Machine Detection",
-            "method":"",
-            "id":"B0009"
-          }
-        ],
-        "references":[
-          "https://github.com/LordNoteworthy/al-khaser/blob/master/al-khaser/AntiVM/Xen.cpp"
-        ],
-        "examples":[
-          "al-khaser_x86.exe_"
+          "464EF2CA59782CE697BC329713698CCC"
         ],
         "description":"",
         "lib":false,
         "is_subscope_rule":false,
         "maec":{ }
       },
-      "source":"rule:\n  meta:\n    name: reference anti-VM strings targeting Xen\n    namespace: anti-analysis/anti-vm/vm-detection\n    authors:\n      - michael.hunhoff@mandiant.com\n    scopes:\n      static: file\n      dynamic: file\n    att&ck:\n      - Defense Evasion::Virtualization/Sandbox Evasion::System Checks [T1497.001]\n    mbc:\n      - Anti-Behavioral Analysis::Virtual Machine Detection [B0009]\n    references:\n      - https://github.com/LordNoteworthy/al-khaser/blob/master/al-khaser/AntiVM/Xen.cpp\n    examples:\n      - al-khaser_x86.exe_\n  features:\n    - or:\n      - string: /^Xen/i\n      - string: /XenVMMXenVMM/i\n      - string: /xenservice.exe/i\n      - string: /XenVMMXenVMM/i\n      - string: /HVM domU/i\n",
+      "source":"rule:\n  meta:\n    name: contains PDB path\n    namespace: executable/pe/pdb\n    authors:\n      - moritz.raabe@mandiant.com\n    scopes:\n      static: file\n      dynamic: file\n    examples:\n      - 464EF2CA59782CE697BC329713698CCC  # level32.exe\n  features:\n    - string: /:\\\\.*\\.pdb/\n",
       "matches":[
         [
           {
@@ -1490,92 +941,27 @@
           {
             "success":true,
             "node":{
-              "type":"statement",
-              "statement":{
-                "type":"or"
+              "type":"feature",
+              "feature":{
+                "type":"regex",
+                "regex":"/:\\\\.*\\.pdb/"
               }
             },
-            "children":[
+            "children":[ ],
+            "locations":[
               {
-                "success":true,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"regex",
-                    "regex":"/^Xen/i"
-                  }
-                },
-                "children":[ ],
-                "locations":[
-                  {
-                    "type":"file",
-                    "value":972175
-                  }
-                ],
-                "captures":{
-                  "xEn.":[
-                    {
-                      "type":"file",
-                      "value":972175
-                    }
-                  ]
-                }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"regex",
-                    "regex":"/XenVMMXenVMM/i"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"regex",
-                    "regex":"/xenservice.exe/i"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"regex",
-                    "regex":"/XenVMMXenVMM/i"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
-              },
-              {
-                "success":false,
-                "node":{
-                  "type":"feature",
-                  "feature":{
-                    "type":"regex",
-                    "regex":"/HVM domU/i"
-                  }
-                },
-                "children":[ ],
-                "locations":[ ],
-                "captures":{ }
+                "type":"file",
+                "value":732704
               }
             ],
-            "locations":[ ],
-            "captures":{ }
+            "captures":{
+              "C:\\Users\\Administrator\\AppData\\Local\\Temporary Projects\\DynamicLayout\\obj\\Debug\\Layout.pdb":[
+                {
+                  "type":"file",
+                  "value":732704
+                }
+              ]
+            }
           }
         ]
       ]

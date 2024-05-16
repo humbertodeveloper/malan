@@ -1,33 +1,188 @@
 ┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
-│ md5                    │ 8eb6ed01392a5cbba283febd7c9aa16a                                                   │
-│ sha1                   │ d472f8b50f8a9a6e583262f326a57927d9df940c                                           │
-│ sha256                 │ b2e85f5907f28c7c9bfc0370be2567494e0fd11887dfc80ca62958d4f5fbf8a0                   │
+│ md5                    │ d4d8ba80d3883dcef71782c643c2e863                                                   │
+│ sha1                   │ 888f67502b0efd4832e90741ff00ab041f9a7d22                                           │
+│ sha256                 │ 00a986fb80ec1dc0f12fa46869d49a9e2504b4f9349e3ea97699877e29ccdb7e                   │
 │ analysis               │ static                                                                             │
-│ os                     │ any                                                                                │
+│ os                     │ windows                                                                            │
 │ format                 │ pe                                                                                 │
 │ arch                   │ amd64                                                                              │
-│ path                   │ /home/peacekeeper/projetos/malan/samples/infected.exe                              │
+│ path                   │ /home/kali/django_test/malan/samples/infected.exe                                  │
 ┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
 
 ┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
 │ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
 ┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
-│ DEFENSE EVASION        │ Reflective Code Loading T1620                                                      │
+│ COLLECTION             │ Clipboard Data T1115                                                               │
+│                        │ Input Capture::Keylogging T1056.001                                                │
+│                        │ Screen Capture T1113                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION        │ File and Directory Permissions Modification T1222                                  │
+│                        │ Hide Artifacts::Hidden Window T1564.003                                            │
+│                        │ Modify Registry T1112                                                              │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Virtualization/Sandbox Evasion::System Checks T1497.001                            │
+│                        │ Virtualization/Sandbox Evasion::User Activity Based Checks T1497.002               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ Application Window Discovery T1010                                                 │
+│                        │ File and Directory Discovery T1083                                                 │
+│                        │ Query Registry T1012                                                               │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Location Discovery T1614                                                    │
+│                        │ System Location Discovery::System Language Discovery T1614.001                     │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Command and Scripting Interpreter T1059                                            │
+│                        │ Shared Modules T1129                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                 │ Resource Hijacking T1496                                                           │
 ┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
 
 ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
 │ MBC Objective               │ MBC Behavior                                                                  │
 ┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
-│ PROCESS                     │ Terminate Process [C0018]                                                     │
+│ ANTI-BEHAVIORAL ANALYSIS    │ Debugger Detection::Software Breakpoints [B0001.025]                          │
+│                             │ Debugger Detection::Timing/Delay Check GetTickCount [B0001.032]               │
+│                             │ Virtual Machine Detection [B0009]                                             │
+│                             │ Virtual Machine Detection::Human User Check [B0009.012]                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COLLECTION                  │ Keylogging::Polling [F0002.002]                                               │
+│                             │ Screen Capture::WinAPI [E1113.m01]                                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMAND AND CONTROL         │ C2 Communication::Send Data [B0030.001]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMUNICATION               │ HTTP Communication::Create Request [C0002.012]                                │
+│                             │ HTTP Communication::Get Response [C0002.017]                                  │
+│                             │ HTTP Communication::Read Header [C0002.014]                                   │
+│                             │ HTTP Communication::Send Request [C0002.003]                                  │
+│                             │ HTTP Communication::Set Header [C0002.013]                                    │
+│                             │ HTTP Communication::WinHTTP [C0002.008]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Crypto Library [C0059]                                                        │
+│                             │ Encrypt Data::RC4 [C0027.009]                                                 │
+│                             │ Generate Pseudo-random Sequence::RC4 PRGA [C0021.004]                         │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Check String [C0019]                                                          │
+│                             │ Checksum::CRC32 [C0032.001]                                                   │
+│                             │ Compression Library [C0060]                                                   │
+│                             │ Encode Data::Base64 [C0026.001]                                               │
+│                             │ Encode Data::XOR [C0026.002]                                                  │
+│                             │ Non-Cryptographic Hash::FNV [C0030.005]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Custom Algorithm [E1027.m03]        │
+│                             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Analysis Tool Discovery::Process detection [B0013.001]                        │
+│                             │ Application Window Discovery [E1010]                                          │
+│                             │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION                   │ Command and Scripting Interpreter [E1059]                                     │
+│                             │ Install Additional Program [B0023]                                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Create Directory [C0046]                                                      │
+│                             │ Delete Directory [C0048]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Read File [C0051]                                                             │
+│                             │ Set File Attributes [C0050]                                                   │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                      │ Clipboard Modification [E1510]                                                │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ MEMORY                      │ Allocate Memory [C0007]                                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Delete Registry Key [C0036.002]                                     │
+│                             │ Registry::Delete Registry Value [C0036.007]                                   │
+│                             │ Registry::Query Registry Key [C0036.005]                                      │
+│                             │ Registry::Query Registry Value [C0036.006]                                    │
+│                             │ Registry::Set Registry Key [C0036.001]                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Process [C0017]                                                        │
+│                             │ Create Thread [C0038]                                                         │
+│                             │ Resume Thread [C0054]                                                         │
+│                             │ Set Thread Local Storage Value [C0041]                                        │
+│                             │ Suspend Thread [C0055]                                                        │
+│                             │ Terminate Thread [C0039]                                                      │
 ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
 
 ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
 │ Capability                                           │ Namespace                                            │
 ┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ reference analysis tools strings                     │ anti-analysis                                        │
+│ check for software breakpoints (3 matches)           │ anti-analysis/anti-debugging/debugger-detection      │
+│ check for time delay via GetTickCount (3 matches)    │ anti-analysis/anti-debugging/debugger-detection      │
+│ check for unmoving mouse cursor                      │ anti-analysis/anti-vm/vm-detection                   │
+│ reference anti-VM strings                            │ anti-analysis/anti-vm/vm-detection                   │
+│ reference anti-VM strings targeting VMWare           │ anti-analysis/anti-vm/vm-detection                   │
+│ reference anti-VM strings targeting VirtualBox       │ anti-analysis/anti-vm/vm-detection                   │
+│ reference anti-VM strings targeting Xen              │ anti-analysis/anti-vm/vm-detection                   │
+│ get geographical location (5 matches)                │ collection                                           │
+│ log keystrokes                                       │ collection/keylog                                    │
+│ log keystrokes via polling (12 matches)              │ collection/keylog                                    │
+│ capture screenshot                                   │ collection/screenshot                                │
+│ send data                                            │ communication                                        │
+│ initialize WinHTTP library (2 matches)               │ communication/http                                   │
+│ read HTTP header                                     │ communication/http                                   │
+│ set HTTP header (3 matches)                          │ communication/http                                   │
+│ prepare HTTP request                                 │ communication/http/client                            │
+│ receive HTTP response (2 matches)                    │ communication/http/client                            │
+│ compiled with Borland Delphi                         │ compiler/delphi                                      │
+│ hash data with CRC32 (9 matches)                     │ data-manipulation/checksum/crc32                     │
+│ encode data using ADD XOR SUB operations (2 matches) │ data-manipulation/encoding                           │
+│ reference Base64 string                              │ data-manipulation/encoding/base64                    │
+│ encode data using XOR (28 matches)                   │ data-manipulation/encoding/xor                       │
+│ encrypt data using RC4 PRGA (4 matches)              │ data-manipulation/encryption/rc4                     │
+│ hash data using fnv (2 matches)                      │ data-manipulation/hashing/fnv                        │
 │ contains PDB path                                    │ executable/pe/pdb                                    │
-│ access .NET resource                                 │ executable/resource                                  │
-│ terminate process                                    │ host-interaction/process/terminate                   │
-│ load .NET assembly                                   │ load-code/dotnet                                     │
-│ compiled to the .NET platform                        │ runtime/dotnet                                       │
+│ contain a thread local storage (.tls) section        │ executable/pe/section/tls                            │
+│ extract resource via kernel32 functions              │ executable/resource                                  │
+│ contain an embedded PE file                          │ executable/subfile/pe                                │
+│ accept command line arguments (2 matches)            │ host-interaction/cli                                 │
+│ read clipboard data (9 matches)                      │ host-interaction/clipboard                           │
+│ write clipboard data (5 matches)                     │ host-interaction/clipboard                           │
+│ query environment variable                           │ host-interaction/environment-variable                │
+│ get common file path                                 │ host-interaction/file-system                         │
+│ set current directory                                │ host-interaction/file-system                         │
+│ copy file                                            │ host-interaction/file-system/copy                    │
+│ create directory                                     │ host-interaction/file-system/create                  │
+│ delete directory (2 matches)                         │ host-interaction/file-system/delete                  │
+│ delete file                                          │ host-interaction/file-system/delete                  │
+│ check if file exists (4 matches)                     │ host-interaction/file-system/exists                  │
+│ get file attributes (5 matches)                      │ host-interaction/file-system/meta                    │
+│ get file version info                                │ host-interaction/file-system/meta                    │
+│ set file attributes                                  │ host-interaction/file-system/meta                    │
+│ read file on Windows                                 │ host-interaction/file-system/read                    │
+│ read file via mapping                                │ host-interaction/file-system/read                    │
+│ write file on Windows (4 matches)                    │ host-interaction/file-system/write                   │
+│ enumerate gui resources (3 matches)                  │ host-interaction/gui                                 │
+│ set application hook (4 matches)                     │ host-interaction/gui                                 │
+│ find graphical window (4 matches)                    │ host-interaction/gui/window/find                     │
+│ get graphical window text (4 matches)                │ host-interaction/gui/window/get-text                 │
+│ hide graphical window (4 matches)                    │ host-interaction/gui/window/hide                     │
+│ get keyboard layout (4 matches)                      │ host-interaction/hardware/keyboard                   │
+│ get disk information (2 matches)                     │ host-interaction/hardware/storage                    │
+│ get disk size                                        │ host-interaction/hardware/storage                    │
+│ get system information on Windows (3 matches)        │ host-interaction/os/info                             │
+│ check OS version (4 matches)                         │ host-interaction/os/version                          │
+│ get thread local storage value                       │ host-interaction/process                             │
+│ create process on Windows (3 matches)                │ host-interaction/process/create                      │
+│ allocate or change RWX memory                        │ host-interaction/process/inject                      │
+│ query or enumerate registry key (3 matches)          │ host-interaction/registry                            │
+│ query or enumerate registry value (8 matches)        │ host-interaction/registry                            │
+│ set registry value                                   │ host-interaction/registry/create                     │
+│ delete registry key                                  │ host-interaction/registry/delete                     │
+│ delete registry value                                │ host-interaction/registry/delete                     │
+│ create thread (2 matches)                            │ host-interaction/thread/create                       │
+│ resume thread (2 matches)                            │ host-interaction/thread/resume                       │
+│ suspend thread                                       │ host-interaction/thread/suspend                      │
+│ terminate thread (2 matches)                         │ host-interaction/thread/terminate                    │
+│ set thread local storage value                       │ host-interaction/thread/tls                          │
+│ reference cryptocurrency strings                     │ impact/cryptocurrency                                │
+│ link function at runtime on Windows (8 matches)      │ linking/runtime-linking                              │
+│ linked against Crypto++                              │ linking/static/cryptopp                              │
+│ linked against sqlite3                               │ linking/static/sqlite3                               │
+│ linked against ZLIB                                  │ linking/static/zlib                                  │
+│ resolve function by parsing PE exports (3 matches)   │ load-code/pe                                         │
+│ identify system language via API (3 matches)         │ targeting/language                                   │
 ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
 

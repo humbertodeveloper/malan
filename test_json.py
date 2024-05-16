@@ -12,7 +12,9 @@ for rule_key, rule_item in rules.items():
     if len(rule_item['meta']['attack']) > 0:
         for attack in rule_item['meta']['attack']:
             print(f"-- ATT&CK Tactic: {attack['tactic']}, ATT&CK Technique: {attack['technique']}")
+            print(f"\n{attack}\n")
 
     if len(rule_item['meta']['mbc']) > 0:
         for mbc in rule_item['meta']['mbc']:
             print(f"-- MBC Objective: {mbc['objective']}, MBC Behavior: {mbc['behavior']}")
+            print(f"\n{mbc}\n")

@@ -1,6 +1,8 @@
 import hashlib
+import subprocess
 import vt
 import argparse
+
 
 class Colors:
     BLUE = '\033[94m'
@@ -57,6 +59,15 @@ def analyze(malware, api_key):
                     print(f"-- {cert_info['name']}")
         print(f"{Colors.ENDC}")
         client.close()
+        print(f"{Colors.PURPLE}============ ANALYZING STATIC DATA (USING CAPA){Colors.ENDC}\n")
+        program = "capa"
+        args = [malware, "-r", "capa_rules", "-s", "capa_sigs", "-j", "-q"]
+        process = subprocess.Popen([program] + args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        output, error = process.communicate()
+        print(output)
+
+
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=f"{Colors.PURPLE}Malware Analyzer 1.0 by Humberto Aquino "

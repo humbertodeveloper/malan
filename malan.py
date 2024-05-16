@@ -61,14 +61,14 @@ def analyze(malware, api_key):
         print(f"{Colors.ENDC}")
         client.close()
         print(f"{Colors.PURPLE}============ ANALYZING STATIC DATA (USING CAPA){Colors.ENDC}\n")
-        program = "capa"
-        args = [malware, "-r", "capa_rules", "-s", "capa_sigs", "-j", "-q"]
-        process = subprocess.Popen([program] + args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-        output, error = process.communicate()
-        print(output)
-        output = output.replace('"', "'")
-        print(output)
-        print(json.loads(output))
+        # program = "capa"
+        # args = [malware, "-r", "capa_rules", "-s", "capa_sigs", "-j", "-q"]
+        # process = subprocess.Popen([program] + args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        # output, error = process.communicate()
+        # print(output)
+        # output = output.replace('"', "'")
+        # print(output)
+        # print(json.loads(output))
 
 
 
